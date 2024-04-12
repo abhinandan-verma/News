@@ -30,8 +30,7 @@ class AuthActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             NewsTheme {
-
-
+                Auth()
             }
         }
     }

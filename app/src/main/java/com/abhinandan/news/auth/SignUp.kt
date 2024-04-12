@@ -36,7 +36,7 @@ import com.airbnb.lottie.compose.LottieClipSpec
 
 
 @Composable
-fun SignUp(authSwap: Boolean) {
+fun SignUp() {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -44,15 +44,6 @@ fun SignUp(authSwap: Boolean) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-
-        Text(
-            text = "Sign Up",
-            color = Color.White,
-            fontSize = 30.sp,
-            fontWeight = FontWeight.Bold,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.padding(16.dp)
-        )
 
         Card (
             modifier = Modifier.background(Color.White)
@@ -142,7 +133,6 @@ fun SignUp(authSwap: Boolean) {
                 Button(
                     onClick = {
                         //  authSwap = true
-                        !authSwap
                     },
                     colors = ButtonDefaults.textButtonColors(
                         Color.Red

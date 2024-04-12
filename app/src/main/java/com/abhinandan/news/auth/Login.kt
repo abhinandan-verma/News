@@ -55,7 +55,6 @@ fun Login() {
         modifier = Modifier
             .fillMaxWidth()
             .padding(20.dp)
-            .verticalScroll(rememberScrollState())
     ) {
 
 
@@ -103,18 +102,6 @@ fun Login() {
                     progressVal = (progressVal + 0.1f) % 1.0f
                 }
             }
-
-
-            Text(text = "Welcome to MadRocket",
-                fontWeight = FontWeight.Bold,
-                fontSize = 25.sp,
-                color = Color.Magenta,
-                modifier = Modifier.padding(bottom = 10.dp)
-            )
-
-            Spacer(modifier = Modifier.height(1.dp))
-
-            Spacer(modifier = Modifier.height(2.dp))
 
             Card {
                 Column(
